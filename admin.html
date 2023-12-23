@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ecomcss/cart.css">
+<link rel="stylesheet" href="ecomcss/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+                    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="shortcut icon" href="icon.png" type="image/x-icon">          
+<title>JSA</title>
+ </head>         
+<body onload="renderTable()">
+    <header>
+                <!--navigasi bar-->
+                <nav id="nav1"  class="navbar navbar-expand-md fixed-top " style=" z-index: 1">         
+            </nav> 
+       <div class="container">
+           <div class="container mt-4">
+               <main role="main">
+                   <div class="row">
+                       <div class="col">
+                           <h1 style="margin-top: 50px">Pesanan</h1>
+                           <div class="table-responsive-sm">
+                               <table id="table" class="table table-hover">
+                                   <thead>
+                                       <tr>
+                                           <th scope="col">ID</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody id="table">
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+                   </div>
+               </main>
+
+           </div>
+           <hr class="featurette-devider">
+       </div>    
+    </header>    
+       <footer class="container"> 
+        <div class="row">Created by@2019 Sakti</div>
+    </footer>     
+    <nav id="nav2" class="navbar navbar-expand-md fixed-bottom  " style="z-index: 1; ">
+        <form class="form-inline mt-2 mt-md-0 mx-auto" >
+           <a class="nav-link  text-white " href="https://crud2019.web.app">
+               <i class="fa fa-map"style="font-size:25px;padding-left:5px;padding-right:10px;color:white"></i> 
+           </a>
+            <a class="nav-link  text-white " href="https://jsa2019bwi.web.app">
+               <i class="fas fa-location-arrow"style="font-size:25px;padding-left:5px;padding-right:10px;color:white"></i> 
+           </a>
+           <a class="text " href="cart.html"style="font-size:20px;color:yellow" >
+               <i class=" fa fa-cart-arrow-down "style="font-size:25px;padding-right:5px;padding-left: 15px;color:yellow"></i><i id="cart_n"> </i> 
+               </a>
+           <a class="nav-link  text-white " href="index.html">
+               <i class="far fas fa-house-damage"style="font-size:25px;padding-left:10px;padding-left: 15px;padding-right:10px;color:white"></i> 
+           </a>
+        </form>
+    </nav>    
+<script src="ecomjs/firebase.js"></script>
+<script src="ecomjs/jquery-3.2.1.slim.min.js"></script>
+<script src="ecomjs/bootstrap.min.js"></script>
+<script  src="ecomjs/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go Pokdarwis</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <!-- update the version number as needed -->
+    <link rel="stylesheet" href="ecomcss/bootstrap.min.css">
+    <link rel="stylesheet" href="ecomcss/cart.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head> 
+
+<body onload="render()" class="animate-left" >
+<div id="overlay" >        
+<div id="text" >
+        <button class="btn btn-success" type="button" style="font-size: 20px;background-color: transparent;">     <h1><i class="fa fa-cog fa-spin" style="font-size:25px ;color: #02ee3b"><i class="fa fa-cog fa-spin" style="font-size:15px;color:#0f8ccb"></i></i>Go Pokdarwis</h1></button>
+<div class=" animate-left">
+      
+
+    <input type="text" id="nama" style="border-color: #02ee3b;border-radius: 10px;padding: 5px
+    ;margin-top:10px" placeholder="  nama">
+
+    <input type="text" id="alamat"style="border-color: #02ee3b;border-radius: 10px;padding:5px
+    ;margin-top:10px"placeholder=" Alamat">
+ 
+    <input type="text" id="telpon"style="border-color: #02ee3b;border-radius: 10px;padding:5px
+    ;margin-top:10px"placeholder=" No Telepon"> 
+    <div style="margin-top:20px">
+        <button id="btnClean" onclick="clean(),off()" class="btn text-white btn-warning" style="margin-left:10px"> <a href="index.html">Batal</a>  </button>    
+        <button id="btnBuy" onclick="buy(),off()" class="btn btn-success" style="margin-left:10px">Pesanan</button>
+    </div>
+</div>
+
+</div>
+</div>
+
+    <!---panel navigasi-->
+    <header >
+<nav id="nav1"  class="navbar navbar-expand-md fixed-top " style=" z-index: 1">
+            <!--merek dan icon -->
+            <P style="color:white;font-size:15px; padding: 15px;">PROSES PEMBAYARAN</P>
+            
+</nav> 
+</header>
+<div class="container mt-3">
+    <main role="main">
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive-sm">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                              <th scope="col">Jenis Pesanan</th>
+                              <th scope="col">Harga</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table"> 
+                        </tbody>                   
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-devider">
+    </main>
+</div>
+<footer class="container">
+        <p class="float-right"> <div class="row">Created by@2019 Sakti</div> </p>
+</footer>     
+<nav id="nav2" class="navbar navbar-expand-md fixed-bottom  " style="z-index: 1; ">
+    <form class="form-inline mt-2 mt-md-0 mx-auto" >
+       <a class="nav-link  text-white " href="https://crud2019.web.app">
+           <i class="fa fa-map"style="font-size:25px;padding-left:5px;padding-right:10px;color:white"></i> 
+       </a>
+        <a class="nav-link  text-white " href="https://jsa2019bwi.web.app">
+           <i class="fas fa-location-arrow"style="font-size:25px;padding-left:5px;padding-right:10px;color:white"></i> 
+       </a>
+      
+       <a class="nav-link  text-white " href="index.html">
+           <i class="far fas fa-house-damage"style="font-size:25px;padding-left:10px;padding-left: 15px;padding-right:10px;color:white"></i> 
+       </a>
+    </form>
+</nav>   
+    <!--script botstrap-->
+<script src="ecomjs/firebase.js"></script>
+<script src="ecomjs/jquery-3.2.1.slim.min.js"></script>
+<script src="ecomjs/bootstrap.min.js"></script>
+<script src="ecomjs/cdn.poopeer.js"></script>
+<script src="ecomjs/cdn.sweet.alert.min.js"></script>
+<script src="ecomjs/cart.js"></script>
+
+</body>
+</html>
