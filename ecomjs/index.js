@@ -33,7 +33,7 @@ var PENGINAPAN=[
 //input Data wisata
 
 function produk_wisata(con){
-  let URL =`img/gombengsari/gb${con}.PNG`;
+  let URL =`img/gombengsari/gombengsari${con}.PNG`;
   // let URL =`img/banyuwangi/banyuwangi${con}.mp4`;
    let btn =`btnBanyuwangi${con}`;
    return `
@@ -88,7 +88,7 @@ function produk_jual(con){
  }
 
  function produk_inap(con){
-  let URL =`img/PENO/${con}.PNG`;
+  let URL =`img/peno/peno${con}.PNG`;
   let btn =`btnIjen${con}`;
   return `
   <div class="col-12" style="padding:5px">
